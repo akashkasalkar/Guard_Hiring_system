@@ -1,1 +1,0 @@
-# Guard_Hiring_system
