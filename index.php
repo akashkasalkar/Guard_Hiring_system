@@ -353,7 +353,7 @@
 								<label for="">Password</label>
 								<input type="password" class="form-control" name="password" required placeholder="*****">
 							</div>
-							<a href="./forgot_password.php">Forgot password?</a>
+							<!-- <a href="./forgot_password.php">Forgot password?</a> -->
 							<div class="form-group">
 								<button class="btn btn-dark" name="login">Login</button>
 							</div>
@@ -364,15 +364,15 @@
         $password=$_POST['password'];
       
        
-            $qry="select * from user WHERE u_email='$email'
-                    AND u_password='$password' AND user_type='customer'";
-            $exc=mysqli_query($conn,$qry);
-            $count=mysqli_affected_rows($conn);
+            $qry="select * from user WHERE email='$email'
+                    AND password='$password' AND user_type='user'";
+            $exc=mysqli_query($con,$qry);
+            $count=mysqli_affected_rows($con);
             if($count == 1){
                 $_SESSION['email']=$email;
                 
                 echo "<script>
-                location='./user/profile.php'</script>";
+                location='./user/index.php'</script>";
             }
             else{
                 echo "<script>alert('Email/Password wrong.')
@@ -419,18 +419,18 @@
 								$mobile=$_POST['mobile'];
 								$password=rand(1000,9999);
 								
-								$qry="select * from user where u_email='$email' or u_phone='$mobile'";
-								$exc=mysqli_query($conn,$qry);
+								$qry="select * from user where email='$email' or phone='$mobile'";
+								$exc=mysqli_query($con,$qry);
 								$count=mysqli_num_rows($exc);
 								if ($count == 0){
-									$reg_qry="INSERT INTO `user`(`u_name`, `u_email`, `u_phone`, `u_password`,`user_type`) VALUES('$name','$email','$mobile','$password','customer')";
-									$reg_exc=mysqli_query($conn,$reg_qry);
+									 $reg_qry="INSERT INTO `user`(`name`, `user_type`, `phone`, `email`, `password`) VALUES('$name','user','$mobile','$email','$password')";
+									$reg_exc=mysqli_query($con,$reg_qry);
 									if($reg_exc){
 										$msg="Thank you for registering, ";
-                            $msg.="login to Manage Bills <br/> ";
-                            $msg.="Username : $email ";
-                            $msg.="<br />Password : $password";
-                            phpmailsend($email, 'User registration', $msg);
+										$msg.="login to OSGHS <br/> ";
+										$msg.="Username : $email ";
+										$msg.="<br />Password : $password";
+										phpmailsend($email, 'User registration', $msg);
 										echo "<script>alert('Successfully Registered.Your Password sent to your Email ID')
 										location=location</script>";
 									}
@@ -454,7 +454,7 @@
 		</div>
 		<!-- Footer -->
 		<footer class="footer" id="contact">
-			<div class="parallax_background parallax-window" data-parallax="scroll" data-image-src="images/cover10.jpg"
+			<div class="parallax_background parallax-window" data-parallax="scroll" data-image-src="images/cover.jpg"
 				data-speed="0.8"></div>
 			<div class="container">
 				<div class="row footer_contact_row">

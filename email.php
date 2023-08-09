@@ -11,14 +11,14 @@ use PHPMailer\PHPMailer\Exception;
 		$mail->IsSMTP();
 		$mail->Host = 'smtp.gmail.com'; //
 		$mail->SMTPAuth = TRUE;
-		$mail->Username = "eventgit01@gmail.com";
+		$mail->Username = "osghs2023@gmail.com";
 		// $mail->Password = "buspass123";
-		$mail->Password = "qxyeplgonknnbifc";
+		$mail->Password = "uevmczejbnvvovak";
 		$mail->SMTPSecure = 'tls'; // tls or ssl
 		$mail->Port     = "587";
 
 		$mail->SMTPDebug = 0;
-		$mail->SetFrom('eventgit01@gmail.com', "Splitwise");
+		$mail->SetFrom('osghs2023@gmail.com', "OSGHS");
 		$mail->AddAddress($to); //we can add here multiple email 
 		$mail->isHTML(true);
 		//$mail->Mailer   = "smtp";
