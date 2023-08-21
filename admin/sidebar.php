@@ -72,7 +72,7 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="all-booking-request.php" class="nav-link">
+                <a href="allJobRequest.php" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>All  Request</p>
                 </a>
@@ -84,13 +84,13 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a href="accepted-booking-request.php" class="nav-link">
+                <a href="acceptedJobRequest.php" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Accepted Request</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="rejected-booking-request.php" class="nav-link">
+                <a href="rejectedJobRequest.php" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Rejected Request</p>
                 </a>
