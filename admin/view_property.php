@@ -20,7 +20,7 @@
               <div class="card-body">
               <table id="example1" class="table table-bordered table-striped">
                 <thead>
-                <tr>
+                <tr class="text-center">
                   <th>S.No</th>
                   <th>Photo</th>
                   <th>Property Name</th>
@@ -58,10 +58,12 @@
 
 
                     <td> 
-                      <a href="" class="btn btn-primary">Edit</a>
-                      <a href="" onClick="return confirm('Do you really want to delete?');" class="btn btn-danger">Delete</a>
+                    <a href="./view_all_property.php?property_id=<?php echo $row['p_id'] ?>" class="btn btn-dark">View / Assign To Guard </a>
+                    <a href="./visitors_details.php?property_id=<?php echo $row['p_id'] ?>" class="btn btn-info">Visitors </a>
+                      <a href="" class="btn btn-primary"><i class="fa fa-pen "></i></a>
+                      <a href="" onClick="return confirm('Do you really want to delete?');" class="btn btn-danger"><i class="fa fa-trash"></i></a>
                      
-                          <a href="./view_all_property.php?property_id=<?php echo $row['p_id'] ?>" class="btn btn-dark">View / Assign To Guard </a>
+                          
 
                     
                     </td>

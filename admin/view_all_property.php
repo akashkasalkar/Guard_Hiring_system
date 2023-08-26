@@ -21,6 +21,7 @@
         <div class="card">
           <div class="card-header bg-primary">
             <h3 class="card-title ">View/Assign Property </h3>
+            <a href="./view_property.php" class="float-right btn btn-dark">View Property</a>
           </div>
           <!-- /.card-header -->
           <div class="card-body">

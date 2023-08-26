@@ -59,9 +59,12 @@ include '../dbconn.php';
           ?>
           <li><a href="job_status.php">Job Status</a></li>
           <?php
-            if( $status=='Confirmed'){
+            if( $status=='Approved'){
               ?>
           <li><a href="./shift_details.php">Shift Details</a></li>
+
+          <li><a href="./visitors_details.php">Visitors Details</a></li>
+
 
               <?php
             }
