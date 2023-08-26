@@ -15,7 +15,15 @@
           <div class="card bg-dark border border-light">
             <div class="card-body">
               <p class="h1 p-5"> Category
-              <span class="display-1 float-right">2</span>
+
+              <?php 
+                $qry="select count(*) as total_cat from category ";
+                $exc=mysqli_query($con,$qry);
+                while($row=mysqli_fetch_array($exc)){
+                  $total_cat=$row['total_cat'];
+                }
+              ?>
+              <span class="display-1 float-right"><?php echo $total_cat ?></span>
             </p>
             </div>
           </div>
@@ -23,8 +31,15 @@
           <div class="col-4">
           <div class="card bg-light border border-dark">
             <div class="card-body">
-              <p class="h1 p-5"> Users
-              <span class="display-1 float-right">5</span>
+              <p class="h1 p-5"> Guards
+              <?php 
+                 $qry="select count(*) as total_guard from user where status='Approved' ";
+                $exc=mysqli_query($con,$qry);
+                while($row=mysqli_fetch_array($exc)){
+                  $total_guard=$row['total_guard'];
+                }
+              ?>
+              <span class="display-1 float-right"><?php echo $total_guard ?></span>
             </p>
             </div>
           </div>
@@ -32,8 +47,15 @@
           <div class="col-4">
           <div class="card bg-dark border border-light">
             <div class="card-body">
-              <p class="h1 p-5"> Employee
-              <span class="display-1 float-right">20</span>
+              <p class="h1 p-5"> Property
+              <?php 
+                 $qry="select count(*) as total_p from property ";
+                $exc=mysqli_query($con,$qry);
+                while($row=mysqli_fetch_array($exc)){
+                  $total_p=$row['total_p'];
+                }
+              ?>
+              <span class="display-1 float-right"><?php echo $total_p ?></span>
             </p>
             </div>
           </div>

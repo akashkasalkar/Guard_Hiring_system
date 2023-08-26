@@ -20,7 +20,7 @@
 <html>
 <head>
  
-  <title>Gauard Hiring System | Dashboard</title>
+  <title>Guard Hiring System | Dashboard</title>
  
   <!-- Font Awesome -->
   <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">

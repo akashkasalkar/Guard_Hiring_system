@@ -20,7 +20,7 @@
               <div class="card-body">
               <table id="example1" class="table table-bordered table-striped">
                 <thead>
-                <tr>
+                <tr class="text-center">
                   <th>S.No</th>
                   <th>Photo</th>
                   <th>Property Name</th>
@@ -28,7 +28,7 @@
                   <th>Category</th>
                   <th>Owner Name</th>
                   <th>Owner Mobile</th>
-                  <th>Status</th>
+             
 
                   <th>Action</th>
                 
@@ -36,7 +36,7 @@
                 </thead>
                 <tbody>
                 <?php 
-                        $qry="select *,p.id as p_id from property p,category c where p.fk_cat_id=c.id ";
+                        $qry="select *,p.id as p_id,p.status as s_status from property p,category c where p.fk_cat_id=c.id ";
                         $exc=mysqli_query($con,$qry);
                         $i=1;
                         while($row=mysqli_fetch_array($exc)) {
@@ -54,31 +54,18 @@
                     <td><?php echo $row['cat_name'] ?></td>
                     <td><?php echo $row['owner_name'] ?></td>
                     <td><?php echo $row['owner_mobile'] ?></td>
-                    <td>
-                      <?php 
-                      if($row['status']==NULL){
-                      echo "<p class='text-info'>Not Assigned</p>";
-                    }else{
-                      echo "<p class='text-success'> Assigned</p>";
-
-                    } ?></td>
+               
 
 
                     <td> 
-                      <a href="" class="btn btn-primary">Edit</a>
-                      <a href="" onClick="return confirm('Do you really want to delete?');" class="btn btn-danger">Delete</a>
-                      <?php
-                        if($row['status']==NULL){ ?>
-                          <a href="./view_all_property.php?property_id=<?php echo $row['p_id'] ?>" class="btn btn-dark">Assign Property</a>
-                        <?php
-                        }else{
-                          ?>
-                          <a href="" class="btn btn-dark">View </a>
+                    <a href="./view_all_property.php?property_id=<?php echo $row['p_id'] ?>" class="btn btn-dark">View / Assign To Guard </a>
+                    <a href="./visitors_details.php?property_id=<?php echo $row['p_id'] ?>" class="btn btn-info">Visitors </a>
+                      <a href="" class="btn btn-primary"><i class="fa fa-pen "></i></a>
+                      <a href="" onClick="return confirm('Do you really want to delete?');" class="btn btn-danger"><i class="fa fa-trash"></i></a>
+                     
+                          
 
-                          <?php
-                        }
-                      ?>
-
+                    
                     </td>
                     </tr>      
                 <?php
