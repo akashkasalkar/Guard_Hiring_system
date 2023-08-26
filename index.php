@@ -247,6 +247,9 @@
 										</li>
 										<li id="contact_li" class=""><a href="#contact" onclick="active('contact')"
 												style="color: #fff; font-size:30px;">Contact</a></li>
+
+												<li id="contact_li" class=""><a href="./admin/" onclick="active('contact')"
+												style="color: #fff; font-size:30px;">Admin Login</a></li>
 									</ul>
 								</nav>
 								<!-- <div class="header_phone ml-auto" style="color: #fff;">Call us: 8073807591</div> -->

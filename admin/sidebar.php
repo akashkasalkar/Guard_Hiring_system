@@ -123,7 +123,7 @@
              </ul>
           </li>
            
-          <li class="nav-item">
+          <!-- <li class="nav-item">
             <a href="visitors_details.php" class="nav-link">
               <i class="nav-icon fas fa-users"></i>
               <p>
@@ -131,12 +131,12 @@
                </p>
             </a>
         
-          </li>
+          </li> -->
           <li class="nav-item">
             <a href="view_user.php" class="nav-link">
               <i class="nav-icon fas fa-users"></i>
               <p>
-                User details
+                Guard details
                </p>
             </a>
         

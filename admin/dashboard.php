@@ -23,7 +23,7 @@
           <div class="col-4">
           <div class="card bg-light border border-dark">
             <div class="card-body">
-              <p class="h1 p-5"> Users
+              <p class="h1 p-5"> Guards
               <span class="display-1 float-right">5</span>
             </p>
             </div>
@@ -32,7 +32,7 @@
           <div class="col-4">
           <div class="card bg-dark border border-light">
             <div class="card-body">
-              <p class="h1 p-5"> Employee
+              <p class="h1 p-5"> Property
               <span class="display-1 float-right">20</span>
             </p>
             </div>
