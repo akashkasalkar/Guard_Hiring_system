@@ -473,7 +473,7 @@
 									<div class="footer_contact_list">
 										<ul>
 											<!-- <li>Office Landline: +44 5567 32 664 567</li> -->
-											<li class="black">Mobile: +91 8073807591</li>
+											<li class="black">Mobile: +91 725951957</li>
 										</ul>
 									</div>
 								</div>
@@ -504,7 +504,7 @@
 									<div class="footer_contact_list">
 										<ul>
 											<!-- <li>youremail@gmail.com</li> -->
-											<li class="black">kasalkar16@gmail.com</li>
+											<li class="black">mitalidalavi2002@gmail.com</li>
 										</ul>
 									</div>
 								</div>

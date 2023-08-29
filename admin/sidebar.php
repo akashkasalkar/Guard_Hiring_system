@@ -16,7 +16,7 @@
         </div>
         <div class="info">
 
-          <a href="./dashboard.php" class="d-block">Welcome : </a>
+          <a href="./dashboard.php" class="d-block">Welcome :ADMIN </a>
          
         </div>
       </div>
