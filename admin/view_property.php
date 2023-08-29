@@ -60,8 +60,8 @@
                     <td> 
                     <a href="./view_all_property.php?property_id=<?php echo $row['p_id'] ?>" class="btn btn-dark">View / Assign To Guard </a>
                     <a href="./visitors_details.php?property_id=<?php echo $row['p_id'] ?>" class="btn btn-info">Visitors </a>
-                      <a href="" class="btn btn-primary"><i class="fa fa-pen "></i></a>
-                      <a href="" onClick="return confirm('Do you really want to delete?');" class="btn btn-danger"><i class="fa fa-trash"></i></a>
+                      <a href="./edit_property.php?property_id=<?php echo $row['p_id'] ?>" class="btn btn-primary"><i class="fa fa-pen "></i></a>
+                      <a href="./view_property.php?p_id=<?php echo $row['p_id'] ?>" onClick="return confirm('Do you really want to delete?');" class="btn btn-danger"><i class="fa fa-trash"></i></a>
                      
                           
 
@@ -80,7 +80,21 @@
             <!-- /.card -->
 
           </div>
-        
+        <?php 
+          if(isset($_GET['p_id'])){
+            $p_id=$_GET['p_id'];
+
+            $qry="delete from property where id='$p_id'";
+            $exc=mysqli_query($con,$qry);
+            if($exc){
+              echo "<script>alert('Deleted')
+              location='./view_property.php'</script>";
+            }else{
+              echo "<script>alert('Can not delete property , Assigned to Guard/Visitors.')
+              location='./view_property.php'</script>";
+            }
+          }
+        ?>
           
          
         </div>

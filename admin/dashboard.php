@@ -12,6 +12,8 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-4">
+          <a href="./view_category.php">
+
           <div class="card bg-dark border border-light">
             <div class="card-body">
               <p class="h1 p-5"> Category
@@ -27,8 +29,11 @@
             </p>
             </div>
           </div>
+              </a>
           </div>
+          
           <div class="col-4">
+            <a href="./view_user.php">
           <div class="card bg-light border border-dark">
             <div class="card-body">
               <p class="h1 p-5"> Guards
@@ -43,8 +48,10 @@
             </p>
             </div>
           </div>
+          </a>
           </div>
           <div class="col-4">
+            <a href="./view_property.php">
           <div class="card bg-dark border border-light">
             <div class="card-body">
               <p class="h1 p-5"> Property
@@ -59,6 +66,7 @@
             </p>
             </div>
           </div>
+          </a>
           </div>
           
          

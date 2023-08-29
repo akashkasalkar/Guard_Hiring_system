@@ -16,7 +16,7 @@
         </div>
         <div class="info">
 
-          <a href="admin-profile.php" class="d-block">Welcome : </a>
+          <a href="./dashboard.php" class="d-block">Welcome : </a>
          
         </div>
       </div>
@@ -40,7 +40,7 @@
           
           <li class="nav-item has-treeview">
             <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-users"></i>
+              <i class="nav-icon fas fa-list"></i>
               <p>
                 Category
                 <i class="fas fa-angle-left right"></i>
@@ -100,7 +100,7 @@
          
           <li class="nav-item has-treeview">
             <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-users"></i>
+              <i class="nav-icon fas fa-home"></i>
               <p>
                 Property
                 <i class="fas fa-angle-left right"></i>
